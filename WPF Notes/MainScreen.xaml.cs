@@ -21,5 +21,20 @@ namespace WPF_Notes
         {
             InitializeComponent();
         }
+
+        private void buttonNew_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonOpen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonAbout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

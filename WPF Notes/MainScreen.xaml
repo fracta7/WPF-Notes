@@ -5,21 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Notes"
         mc:Ignorable="d"
-        Title="MainScreen" Height="450" Width="800">
-    <StackPanel Background="WhiteSmoke">
+        Title="Notes" Height="450" Width="800" ResizeMode="NoResize" Foreground="#050505">
+    <StackPanel Background="{DynamicResource LightBG}">
         <Border Padding="12">
             <StackPanel>
-                <TextBlock Text="Notes" FontSize="36" HorizontalAlignment="Center" FontWeight="DemiBold" FontFamily="Calibri"/>
+                <TextBlock Text="Notes" Foreground="{DynamicResource DarkText}" FontSize="36" HorizontalAlignment="Center" FontWeight="DemiBold" FontFamily="Calibri"/>
                 <Grid Margin="0 5 0 0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" Margin="0 0 5 0">
-                        <TextBlock Text="Recent notes" FontSize="18" FontFamily="Calibri"/>
+                        <TextBlock Text="Recent notes" FontSize="18" FontFamily="Calibri" Margin="0 0 0 5" Foreground="{DynamicResource DarkText}"/>
+                        <Button x:Name="recent1" Content=" " FontSize="18" FontFamily="Calibri" Padding="15" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" BorderBrush="{DynamicResource ButtonBorderLight}" Margin="2"/>
+                        <Button x:Name="recent2" Content=" " FontSize="18" FontFamily="Calibri" Padding="15" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" BorderBrush="{DynamicResource ButtonBorderLight}" Margin="2"/>
+                        <Button x:Name="recent3" Content=" " FontSize="18" FontFamily="Calibri" Padding="15" Background="{DynamicResource ButtonBackgroundLight}" Foreground="#ececec" BorderBrush="#FF014F83" Margin="2"/>
+                        <Button x:Name="recent4" Content=" " FontSize="18" FontFamily="Calibri" Padding="15" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" BorderBrush="{DynamicResource ButtonBorderLight}" Margin="2"/>
+                        <Button x:Name="recent5" Content=" " FontSize="18" FontFamily="Calibri" Padding="15" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" BorderBrush="{DynamicResource ButtonBorderLight}" Margin="2"/>
                     </StackPanel>
                     <StackPanel Grid.Column="1" Margin="5 0 0 0">
-                        <Button Content="New" FontSize="18" FontFamily="Calibri"/>
+                        <Button x:Name="buttonNew" Click="buttonNew_Click" BorderBrush="{DynamicResource ButtonBorderLight}" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" Content="New" FontSize="18" FontFamily="Calibri" Padding="5" Margin="5"/>
+                        <Button x:Name="buttonOpen" Click="buttonOpen_Click" BorderBrush="{DynamicResource ButtonBorderLight}" Background="{DynamicResource ButtonBackgroundLight}" Foreground="{DynamicResource LightText}" Content="Open" FontSize="18" FontFamily="Calibri" Padding="5" Margin="5"/>
+                        <Button x:Name="buttonAbout" Click="buttonAbout_Click" BorderBrush="{DynamicResource ButtonBorderLight}"  Background="{DynamicResource ButtonBackgroundLight}" Foreground="#ececec" Content="About" FontSize="18" FontFamily="Calibri" Padding="5" Margin="5"/>
+                        <CheckBox x:Name="checkboxDarkTheme" IsChecked="False" Content="Dark theme" FontFamily="Calibri" FontSize="18" Margin="5" Background="{DynamicResource LightBG}" BorderBrush="{DynamicResource ButtonBorderLight}" Foreground="{DynamicResource DarkText}"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>

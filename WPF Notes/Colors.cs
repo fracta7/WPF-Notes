@@ -14,7 +14,8 @@ namespace WPF_Notes
 
         //light theme colors
         public static string WhiteBGPrimary = "#ececec";
-        public static string AquaButton = "#318fb5";
+        public static string AquaButton = "#FF007ACC";
+        public static string AquaButtonBorder = "#FF014F83";
         public static string DarkText = "#050505";
     }
 }

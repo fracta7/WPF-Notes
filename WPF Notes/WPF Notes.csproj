@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="pics\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <SplashScreen Include="img\notes-splash.png" />
   </ItemGroup>
 

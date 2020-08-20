@@ -5,5 +5,11 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
+        <SolidColorBrush x:Key="ButtonBackgroundLight" Color="#FF007ACC"/>
+        <SolidColorBrush x:Key="ButtonBorderLight" Color="#FF014F83"/>
+        <SolidColorBrush x:Key="LightBG" Color="#ececec"/>
+        <SolidColorBrush x:Key="LightText" Color="#ececec"/>
+        <SolidColorBrush x:Key="DarkText" Color="#050505"/>
+        <SolidColorBrush x:Key="DarkBG" Color="#222831"/>
     </Application.Resources>
 </Application>
